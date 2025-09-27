@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran | NusaJava Eats</title>
+    <link rel="stylesheet" href="src/pembayaran.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <nav class="navbar" id="mainNavbar">
+        <div class="logo">
+            <img src="Assets/Img/NusaJava Eats.png" alt="Logo" />
+            <span class="logo-text">NusaJava Eats</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Resep</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Komunitas</a></li>
+        </ul>
+        <div class="nav-actions">
+        
+            <div class="cart-navbar-wrapper">
+                <button class="cart-navbar-btn" id="cartNavbarBtn" aria-label="Cart">
+                    <i data-feather="shopping-cart"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <div class="cart-dropdown" id="cartDropdown">
+                    <!-- Cart content render by JS -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="checkout-wrapper">
+        <div class="checkout-container">
+            <!-- Left: Billing Details -->
+            <section class="billing-section">
+                <h2>Penagian</h2>
+                <form id="checkoutForm" autocomplete="off">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Nama Depan <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nama Belakang <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="alamat">Alamat<span class="required">*</span></label>
+                        <textarea id="alamat" name="alamat" required placeholder="Jl./Gang/Nomor Rumah, RT, RW, Desa/Kel, Kec, Kabupaten"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="catatan">Catatan</label>
+                        <textarea id="catatan" name="catatan" placeholder="Catatan tambahan untuk pesanan"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Nomer Handphone <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </form>
+            </section>
+            <!-- Right: Order Summary -->
+            <aside class="order-summary-section">
+                <h2>Your Order</h2>
+                <div id="orderSummary"></div>
+                <div class="payment-method-box">
+                    <div><b>Pilih Metode Pembayaran</b></div>
+                    <label class="pay-radio">
+                        <input type="radio" name="payMethod" value="bca" checked>
+                        <span>BCA Virtual Account</span>
+                    </label>
+                    <label class="pay-radio">
+                        <input type="radio" name="payMethod" value="gopay">
+                        <span>GoPay (085727196825)</span>
+                    </label>
+                </div>
+                <div id="paymentDetailBox">
+                    <!-- Rendered by JS sesuai metode -->
+                </div>
+                <button class="place-order-btn" id="placeOrderBtn">Place order</button>
+            </aside>
+        </div>
+    </main>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="src/pembayaran.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        const navbar = document.getElementById("mainNavbar");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>

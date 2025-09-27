@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - NusaJava Eats</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="login/assets/css/style.css" />
+  
+  <style>
+    .error-alert {
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      border: 1px solid #f5c6cb;
+      display: none;
+    }
+    .success-alert {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      border: 1px solid #c3e6cb;
+      display: none;
+    }
+    
+  </style>
+</head>
+
+<body class="d-flex align-items-center min-vh-100 py-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- LOGIN FORM -->
+      <div class="col-md-6 auth-wrapper" id="login-box">
+        <div class="text-center mb-4">
+          <div class="brand-logo">Nusa<span>Java</span> Eats</div>
+        </div>
+        <div class="auth-container">
+          <div class="auth-header">
+            <h2 class="mb-2">WELCOME BACK!</h2>
+            <p class="mb-0">
+              Don't have an account?
+              <a href="#" class="signup" onclick="event.preventDefault(); showSignup()">Sign Up</a>
+            </p>
+          </div>
+          <div class="auth-body">
+            <!-- Error Alert -->
+            <div id="error-alert" class="error-alert"></div>
+            <!-- Success Alert -->
+            <div id="success-alert" class="success-alert"></div>
+            <label for="login-email" class="form-label">Email: dummy@gmail.com | Password: 12345678</label>
+            <form id="login-form" method="POST" action="login/login_redirect.php">
+              <div class="mb-4">
+                <label for="login-email" class="form-label">Email</label>
+                <input type="email" class="form-control auth-input" id="login-email" name="email" placeholder="name@example.com" required />
+              </div>
+              <div class="auth-form-group password-group">
+                <label for="login-email" class="form-label">Password</label>
+                <input type="password" class="auth-input" id="login-password" name="password" placeholder="Password" required />
+              </div>
+              <button type="submit" class="btn auth-submit-btn">Login</button>
+              <div class="divider">Or Sign in with</div>
+              <div class="text-center">
+                <button type="button" class="social-btn"><i class="bi bi-google"></i></button>
+                <button type="button" class="social-btn"><i class="bi bi-facebook"></i></button>
+                <button type="button" class="social-btn"><i class="bi bi-twitter"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIGNUP FORM -->
+      <div class="col-md-6 auth-wrapper d-none" id="signup-box">
+        <div class="text-center mb-4">
+          <div class="brand-logo">Nusa<span>Java</span> Eats</div>
+        </div>
+        <div class="auth-container">
+          <div class="auth-header">
+            <h2 class="mb-2">JOIN US!</h2>
+            <p class="mb-0">
+              Already have an account?
+              <a href="#" class="signup" onclick="event.preventDefault(); showLogin()">Login</a>
+            </p>
+          </div>
+          <div class="auth-body">
+            <!-- Signup Error Alert -->
+            <div id="signup-error-alert" class="error-alert"></div>
+            <!-- Signup Success Alert -->
+            <div id="signup-success-alert" class="success-alert"></div>
+            
+            <form id="signup-form">
+              <div class="mb-4">
+                <label for="signup-name" class="form-label">Full Name</label>
+                <input type="text" class="form-control auth-input" id="signup-name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="mb-4">
+                <label for="signup-email" class="form-label">Email</label>
+                <input type="email" class="form-control auth-input" id="signup-email" name="email" placeholder="name@example.com" required />
+              </div>
+              <div class="mb-4 password-group">
+                <label for="signup-password" class="form-label">Password</label>
+                <input type="password" class="form-control auth-input" id="signup-password" name="password" placeholder="Create password" required />
+              </div>
+              <button type="submit" class="btn auth-submit-btn">Sign Up</button>
+              <div class="divider">Or Sign up with</div>
+              <div class="text-center">
+                <button type="button" class="social-btn"><i class="bi bi-google"></i></button>
+                <button type="button" class="social-btn"><i class="bi bi-facebook"></i></button>
+                <button type="button" class="social-btn"><i class="bi bi-twitter"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function showLogin() {
+      document.getElementById('login-box').classList.remove('d-none');
+      document.getElementById('signup-box').classList.add('d-none');
+      hideAllAlerts();
+    }
+
+    function showSignup() {
+      document.getElementById('signup-box').classList.remove('d-none');
+      document.getElementById('login-box').classList.add('d-none');
+      hideAllAlerts();
+    }
+
+    function hideAllAlerts() {
+      document.getElementById('error-alert').style.display = 'none';
+      document.getElementById('success-alert').style.display = 'none';
+      document.getElementById('signup-error-alert').style.display = 'none';
+      document.getElementById('signup-success-alert').style.display = 'none';
+    }
+
+    function showError(message, isSignup = false) {
+      hideAllAlerts();
+      const alertId = isSignup ? 'signup-error-alert' : 'error-alert';
+      const alert = document.getElementById(alertId);
+      alert.textContent = message;
+      alert.style.display = 'block';
+      
+      // Auto hide after 5 seconds
+      setTimeout(() => {
+        alert.style.display = 'none';
+      }, 5000);
+    }
+
+    function showSuccess(message, isSignup = false) {
+      hideAllAlerts();
+      const alertId = isSignup ? 'signup-success-alert' : 'success-alert';
+      const alert = document.getElementById(alertId);
+      alert.textContent = message;
+      alert.style.display = 'block';
+    }
+
+    // Cek URL parameter untuk error messages
+    window.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const error = urlParams.get('error');
+      
+      if (error) {
+        let errorMessage = '';
+        switch (error) {
+          case 'empty':
+            errorMessage = 'Email dan password harus diisi!';
+            break;
+          case 'wrong_password':
+            errorMessage = 'Password yang Anda masukkan salah!';
+            break;
+          case 'email_not_found':
+            errorMessage = 'Email tidak terdaftar. Silakan daftar terlebih dahulu.';
+            break;
+          case 'server':
+            errorMessage = 'Terjadi masalah server. Silakan coba lagi nanti.';
+            break;
+          case 'no_data':
+            errorMessage = 'Data login tidak valid.';
+            break;
+          default:
+            errorMessage = 'Terjadi kesalahan saat login.';
+        }
+        
+        showError(errorMessage);
+        
+        // Hapus parameter error dari URL tanpa reload
+        const url = new URL(window.location);
+        url.searchParams.delete('error');
+        window.history.replaceState({}, document.title, url);
+      }
+    });
+
+    // SIGNUP dengan error handling
+    document.getElementById('signup-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const fullname = document.getElementById('signup-name').value;
+      const email = document.getElementById('signup-email').value;
+      const password = document.getElementById('signup-password').value;
+
+      // Validasi client-side
+      if (!fullname.trim()) {
+        showError('Nama lengkap harus diisi!', true);
+        return;
+      }
+      if (!email.trim()) {
+        showError('Email harus diisi!', true);
+        return;
+      }
+      if (password.length < 6) {
+        showError('Password minimal 6 karakter!', true);
+        return;
+      }
+
+      try {
+        const response = await fetch('login/signup.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ fullname, email, password })
+        });
+
+        const result = await response.json();
+        if (result.success) {
+          showSuccess('Signup berhasil! Silakan login dengan akun Anda.', true);
+          // Clear form
+          document.getElementById('signup-form').reset();
+          // Auto switch to login after 2 seconds
+          setTimeout(() => {
+            showLogin();
+          }, 2000);
+        } else {
+          showError(result.error || 'Signup gagal. Silakan coba lagi.', true);
+        }
+      } catch (error) {
+        console.error('Signup error:', error);
+        showError('Terjadi kesalahan saat signup. Silakan coba lagi.', true);
+      }
+    });
+  </script>
+</body>
+</html>

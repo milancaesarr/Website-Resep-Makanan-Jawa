@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NusaJava Eats - Demo</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    :root {
+      --mainColor: #feba71;
+      --secondaryColor: #5b2620;
+      --accentColor: #af2d2d;
+      --doubleColor: #816040;
+      --tripleColor: #a7774e;
+      --tambahColor: #222;
+      --white: #ffffff;
+      --light-brown: #f4e4d0;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      background: linear-gradient(90deg, var(--secondaryColor), var(--doubleColor)) !important;
+      padding: 15px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--mainColor);
+    }
+
+    .logo-text {
+      color: var(--white);
+      font-weight: bold;
+      font-size: 1.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: var(--mainColor);
+      color: var(--secondaryColor);
+      transform: translateY(-2px);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .login-button {
+      background: var(--accentColor);
+      color: var(--white);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cart-navbar-btn {
+      background: var(--mainColor);
+      color: var(--secondaryColor);
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: var(--accentColor);
+      color: var(--white);
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    /* Recipe Cards */
+    .container-resep {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px 32px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .container-resep .card {
+      background-color: #a7774e;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(60, 60, 60, 0.11);
+      width: 365px;
+      min-width: 280px;
+      flex-shrink: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .container-resep .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .container-resep .card-img {
+      width: 100%;
+      height: 185px;
+      object-fit: cover;
+      background: linear-gradient(45deg, #ff6b6b, #ffa726);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .container-resep .card-content {
+      padding: 17px 18px 22px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      background: #a7774e;
+      height: 100%;
+      width: 100%;
+    }
+
+    .container-resep .location {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      color: #fffaf3;
+      opacity: 0.95;
+      margin-bottom: 0.5px;
+      margin-top: 2px;
+      text-align: center;
+    }
+
+    .container-resep .food-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #252525;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 6px;
+      line-height: 1.13;
+    }
+
+    .container-resep .card p {
+      color: #fff;
+      font-weight: 500;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .container-resep .details-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 5px 35px 0px;
+    }
+
+    .container-resep .detail {
+      display: flex;
+      align-items: center;
+      font-size: 1.04rem;
+      color: #ffd5c2;
+      gap: 7px;
+    }
+
+    .container-resep .detail .fa-clock {
+      color: #ff837d;
+      font-size: 1.07em;
+      margin-right: 3px;
+    }
+
+    .container-resep .detail .fa-star {
+      color: #ffc246;
+      font-size: 1.09em;
+      margin-right: 3px;
+    }
+
+    .container-resep .lihat-btn {
+      margin: 13px auto 0 auto;
+      padding: 7px 26px;
+      outline: none;
+      background: #e9a06e;
+      color: #432a0b;
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.16s;
+      text-decoration: none;
+      box-shadow: 0 2px 8px #0002;
+      display: inline-block;
+    }
+
+    .container-resep .lihat-btn:hover {
+      background: #f9bc93;
+    }
+
+    /* Filter buttons with horizontal layout */
+    .filter-button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 0 20px;
+    }
+
+    .filter-button button {
+      background: #ff983e;
+      color: #432a0b;
+      font-size: 0.95rem;
+      padding: 12px 24px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      white-space: nowrap;
+      border: none;
+      min-width: 120px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .filter-button button:hover {
+      background: #ffa95c;
+      color: #2e1c06;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .filter-button button.active {
+      background-color: #a7774e;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(167, 119, 78, 0.3);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1100px) {
+      .container-resep {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 780px) {
+      .container-resep {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 7px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .navbar {
+        padding: 10px 15px;
+      }
+
+      .logo-text {
+        font-size: 1.2em;
+      }
+
+      .filter-button {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .filter-button button {
+        min-width: 100%;
+        padding: 10px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .filter-button {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <div style="width: 40px; height: 40px; background: var(--mainColor); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondaryColor); font-weight: bold;">NJ</div>
+      <span class="logo-text">NusaJava Eats</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#" class="active">Beranda</a></li>
+      <li><a href="#">Tentang Kami</a></li>
+      <li><a href="#">Resep</a></li>
+      <li><a href="#">Produk</a></li>
+      <li><a href="#">Kontak</a></li>
+      <li><a href="#">Komunitas</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <div style="display: flex; align-items: center; gap: 10px; color: white;">
+        <span>👋 Demo User</span>
+        <button class="login-button">
+          <i data-feather="log-out"></i> Logout
+        </button>
+      </div>
+
+      <div style="position: relative;">
+        <button class="cart-navbar-btn">
+          <i data-feather="shopping-cart"></i>
+          <span class="cart-badge">3</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <center>
+    <section class="hero" style="margin-top: 80px;">
+      <h1>Warisan Rasa Nusantara: Resep Kuliner Terbaik dari Tanah Jawa</h1>
+      <p>Website ini menghadirkan berbagai resep autentik dari Jawa Timur, Jawa Tengah, Jawa
+        Barat, Yogyakarta, Jakarta, dan Banten. Disusun dengan menjaga cita rasa tradisional, setiap resep siap membawa
+        kehangatan budaya Nusantara ke meja makan Anda.</p>
+
+      <div class="hero-content">
+        <h4>Cari Resep Nusantara? Ini Dia Kumpulan Terbaik dari Tanah Jawa!</h4>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Cari resep...">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="filter-button">
+          <button type="button" class="active">All</button>
+          <button type="button">Jawa Timur</button>
+          <button type="button">Jawa Tengah</button>
+          <button type="button">Jawa Barat</button>
+          <button type="button">Yogyakarta</button>
+          <button type="button">Jakarta</button>
+          <button type="button">Banten</button>
+        </div>
+
+        <!-- Recipe Cards -->
+        <div class="container-resep">
+          <div class="card">
+            <div class="card-img">Nasi Liwet</div>
+            <div class="card-content">
+              <div class="location">Jawa Tengah</div>
+              <div class="food-name">Nasi Liwet</div>
+              <p>Nasi gurih khas dari Solo, Jawa Tengah yang kaya rasa dan aroma santan.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 1 hr</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.4</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">Gudeg</div>
+            <div class="card-content">
+              <div class="location">Yogyakarta</div>
+              <div class="food-name">Gudeg</div>
+              <p>Makanan khas Yogyakarta berbahan nangka muda dimasak dengan santan.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 50 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">Seblak</div>
+            <div class="card-content">
+              <div class="location">Jawa Barat</div>
+              <div class="food-name">Seblak</div>
+              <p>Masakan khas Bandung dengan rasa pedas gurih berbahan kerupuk basah.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 45 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.7</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">Soto Betawi</div>
+            <div class="card-content">
+              <div class="location">DKI Jakarta</div>
+              <div class="food-name">Soto Betawi</div>
+              <p>Soto khas Betawi dengan kuah santan atau susu yang kaya rasa.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 55 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.5</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">Rawon</div>
+            <div class="card-content">
+              <div class="location">Jawa Timur</div>
+              <div class="food-name">Rawon</div>
+              <p>Sup daging sapi khas Jawa Timur dengan kuah hitam dari kluwek.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 1 hr</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.6</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">Sate Bandeng</div>
+            <div class="card-content">
+              <div class="location">Banten</div>
+              <div class="food-name">Sate Bandeng</div>
+              <p>Ikan bandeng berbumbu khas Banten yang dibakar hingga matang sempurna.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 40 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.3</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </center>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+
+    // Filter functionality
+    document.querySelectorAll('.filter-button button').forEach(button => {
+      button.addEventListener('click', function() {
+        document.querySelectorAll('.filter-button button').forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Nasi Liwet Solo</title>
+    <link rel="stylesheet" href="resep.css">
+    
+</head>
+<body>
+    <nav class="navbar" id="mainNavbar">
+        <div class="logo">
+          <img src="Assets/Img/NusaJava Eats.png" alt="Logo">
+          <span class="logo-text" data-i18n="header_brand">NusaJava Eats</span>
+        </div>
+    
+        <ul class="nav-links">
+          <li><a href="#" data-i18n="nav_home" >Beranda</a></li>
+          <li><a href="#" data-i18n="nav_about">Tentang Kami</a></li>
+          <li><a href="#" data-i18n="nav_recipe">Resep</a></li>
+          <li><a href="#" data-i18n="nav_product">Produk</a></li>
+          <li><a href="#" data-i18n="nav_contact">Kontak</a></li>
+          <li><a href="#" data-i18n="nav_community">Komunitas</a></li>
+        </ul>
+    
+        <div class="nav-actions">
+          <form id="searchForm">
+            <input type="text" placeholder="Cari..." class="search-box" id="searchInput"
+              data-i18n-placeholder="search_placeholder">
+          </form>
+    
+          <div class="language-selector">
+            <button class="lang-btn" type="button">
+              <span id="langBtnText">ID</span> <i class="arrow-down">&#9662;</i>
+            </button>
+            <ul class="lang-dropdown">
+              <li><a href="#" class="lang-switch" data-lang="id">ID</a></li>
+              <li><a href="#" class="lang-switch" data-lang="en">EN</a></li>
+            </ul>
+          </div>
+    
+
+        </div>
+      </nav>
+    <div class="recipe-container">
+        <!-- Back Button -->
+        <a href="home.html" class="kembali-button">Kembali</a>
+
+        <div class="recipe-main-row">
+            <div class="recipe-image-section">
+                <div class="recipe-image">
+                    <img src="Assets/Img/makanan/Nasi Liwet.png" alt="nasi-liwet">
+                    
+                </div>
+            </div>
+            <div class="recipe-info-section">
+                <div class="recipe-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-value">4.9</span>
+                    <span class="votes">from 215 votes</span>
+                </div>
+                <h1>Nasi Liwet Solo (Kaya Rasa & Aroma Santan)</h1>
+                <div class="author"><strong>Author:</strong> Masakan Keraton</div>
+                <div class="meta-row"><strong>Cooking Method:</strong> Slow Cooking</div>
+                <div class="meta-row"><strong>Cuisine:</strong> Indonesian, Jawa Tengah</div>
+                <div class="meta-row"><strong>Courses:</strong> Main Course, Feast</div>
+                <div class="meta-row"><strong>Recipe Keys:</strong> <span class="key">🍚</span> <span class="key">🥥</span> <span class="key">🔥</span></div>
+                <button id="printBtn" class="btn btn-green">Print Recipe</button>
+                <div class="recipe-details">
+                    <div class="detail-box">
+                        <div class="detail flex-center">
+                            <span class="icon">⚡</span>
+                            <div>
+                                <div class="detail-label">Difficulty:</div>
+                                <div class="detail-value">Advanced</div>
+                            </div>
+                        </div>
+                        <div class="detail flex-center">
+                            <span class="icon">⏰</span>
+                            <div>
+                                <div class="detail-label">Prep Time</div>
+                                <div class="detail-value">30 mins</div>
+                            </div>
+                        </div>
+                        <div class="detail flex-center">
+                            <span class="icon">🔥</span>
+                            <div>
+                                <div class="detail-label">Cook Time</div>
+                                <div class="detail-value">1.5 hours</div>
+                            </div>
+                        </div>
+                        <div class="detail flex-center">
+                            <span class="icon">💤</span>
+                            <div>
+                                <div class="detail-label">Rest Time</div>
+                                <div class="detail-value">15 mins</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-season">
+                        <span class="icon">🎉</span>
+                        <div class="detail-label">Best Season:</div>
+                        <div class="detail-value">Acara Keluarga, Hari Besar, Arisan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipes-description">
+            <h2>Description</h2>
+            <p>
+                Nasi Liwet Solo adalah hidangan legendaris khas Surakarta yang terkenal dengan kekayaan rasa dan aroma santan yang menggugah selera. Berbeda dengan versi Sunda, nasi liwet Solo dimasak dengan teknik khusus menggunakan kastrol atau dandang logam, menghasilkan tekstur nasi yang lebih padat dan gurih. Ciri khasnya adalah penggunaan rempah lengkap, santan kental, dan pelengkap seperti areh (santan kental yang dimasak hingga berminyak), suwiran ayam, telur pindang, dan sambal labai khas Solo.
+            </p>
+        </div>
+        <div class="recipe-content-2col">
+            <div class="recipe-ingredients">
+                <h2>Bahan Utama</h2>
+                <ol class="ingredients-list">
+                    <li>500 gr beras pera khusus liwet (lebih baik pakai beras IR 64)</li>
+                    <li>800 ml santan kental dari 1 butir kelapa tua</li>
+                    <li>300 ml kaldu ayam</li>
+                    <li>200 gr ayam kampung, potong kecil</li>
+                    <li>100 gr ikan teri medan, goreng kering</li>
+                    <li>4 butir telur pindang</li>
+                    <li>5 lembar daun salam</li>
+                    <li>3 batang serai, memarkan</li>
+                    <li>5 lembar daun jeruk purut</li>
+                    <li>2 cm lengkuas, memarkan</li>
+                    <li>3 sdm minyak kelapa</li>
+                    <li>2 sdt garam</li>
+                    <li>1 sdt gula merah</li>
+                    <li>1/2 sdt merica bubuk</li>
+                </ol>
+                
+                <h2>Bumbu Halus</h2>
+                <ol class="ingredients-list">
+                    <li>8 siung bawang merah</li>
+                    <li>5 siung bawang putih</li>
+                    <li>3 butir kemiri, sangrai</li>
+                    <li>1 cm jahe</li>
+                    <li>1 cm kunyit bakar</li>
+                </ol>
+                
+                <h2>Pelengkap</h2>
+                <ol class="ingredients-list">
+                    <li>Areh (santan kental yang dimasak hingga berminyak)</li>
+                    <li>Sambal labai khas Solo</li>
+                    <li>Kerupuk rambak</li>
+                    <li>Tempe goreng</li>
+                    <li>Perkedel kentang</li>
+                    <li>Timun iris</li>
+                </ol>
+            </div>
+            <div class="recipe-steps">
+                <h2>Cara Pembuatan</h2>
+                <ol class="steps-list">
+                    <li><strong>Membuat areh:</strong> Rebus 200 ml santan kental dengan sedikit garam sambil terus diaduk perlahan hingga santan mengental dan mengeluarkan minyak. Sisihkan.</li>
+                    <li>Tumis bumbu halus dengan minyak kelapa hingga harum dan matang. Masukkan daun salam, serai, daun jeruk, dan lengkuas. Tumis hingga bumbu benar-benar matang.</li>
+                    <li>Masukkan potongan ayam, aduk hingga ayam berubah warna. Tuang sisa santan dan kaldu ayam, bumbui dengan garam, gula merah, dan merica.</li>
+                    <li>Cuci beras hingga bersih, lalu masukkan ke dalam campuran santan dan bumbu. Aduk rata dengan api kecil hingga santan mulai terserap.</li>
+                    <li>Masukkan ikan teri medan yang sudah digoreng, aduk perlahan.</li>
+                    <li>Pindahkan ke dandang/kastrol, kukus selama 45 menit hingga nasi matang sempurna. Untuk hasil terbaik, gunakan api kecil dan waktu lebih lama.</li>
+                    <li>Setelah matang, biarkan nasi tertutup selama 15 menit agar lebih pulen.</li>
+                    <li>Penyajian: Tata nasi liwet di piring, beri suwiran ayam, telur pindang, siram dengan areh, dan sajikan dengan pelengkap lainnya.</li>
+                </ol>
+                
+                <h2>Tips Rahasia</h2>
+                <ul class="tips-list">
+                    <li>Gunakan santan peras pertama untuk rasa yang lebih kaya</li>
+                    <li>Untuk aroma lebih wangi, tambahkan 2 lembar daun pandan saat menanak nasi</li>
+                    <li>Nasi liwet Solo asli biasanya dimasak dengan kayu bakar untuk aroma smokey yang khas</li>
+                    <li>Biarkan nasi matang dengan uap sendiri (diamkan 15 menit setelah api dimatikan)</li>
+                    <li>Sajikan dengan sambal labai (cabai rawit, bawang merah, garam, dan terasi dibakar lalu diulek)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Our Services</li>
+              <li>Blogs</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>NusaJava Eats Web</h3>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Menu</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>NusaJava Eats@Gmail.Com</li>
+              <li>+085727196825</li>
+              <li>Instagram:@NusaJava.Eats</li>
+            </ul>
+          </div>
+          <div class="footer-col social">
+            <h3>Follow Us</h3>
+            <a href="#" aria-label="LinkedIn" class="social-icon">
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-icon">
+              <i data-feather="youtube"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-icon">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="#" aria-label="Github" class="social-icon">
+              <i data-feather="github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2025 NusaJava Eats.</div>
+      </footer>
+    
+    <script src="resep.js"></script>
+    <script>
+        const navbar = document.getElementById("mainNavbar");
+    
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+      </script>
+</body>
+</html>

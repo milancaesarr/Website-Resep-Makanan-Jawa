@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detail Produk - NusaJava Eats</title>
+  <link rel="stylesheet" href="produk-detail.css" >
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <nav class="navbar" id="mainNavbar">
+    <div class="logo">
+      <img src="Assets/Img/NusaJava Eats.png" alt="Logo" />
+      <span class="logo-text">NusaJava Eats</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">Beranda</a></li>
+      <li><a href="#">Tentang Kami</a></li>
+      <li><a href="#">Resep</a></li>
+      <li><a href="#">Produk</a></li>
+      <li><a href="#">Kontak</a></li>
+      <li><a href="#">Komunitas</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="login-button"><i data-feather="user"></i> <span>Masuk</span></button>
+      <div class="cart-navbar-wrapper">
+        <button class="cart-navbar-btn" id="cartNavbarBtn" aria-label="Cart">
+          <i data-feather="shopping-cart"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <div class="cart-dropdown" id="cartDropdown">
+          <!-- Cart content render by JS -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="produk-detail-container" id="produkDetailContainer">
+      <!-- Diisi oleh JS -->
+    </div>
+  </main>
+  <script src="produk-detail.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>

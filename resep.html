@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="resep/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+  <!-- (navbar tetap) -->
+    <nav class="navbar" id="mainNavbar">
+      <div class="logo">
+        <img src="Assets/img/NusaJava Eats.png" alt="Logo" />
+        <span class="logo-text" data-i18n="header_brand">NusaJava Eats</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html" data-i18n="nav_home">Beranda</a></li>
+        <li><a href="#" data-i18n="nav_about">Tentang Kami</a></li>
+        <li><a href="#" data-i18n="nav_recipe">Resep</a></li>
+        <li><a href="#" data-i18n="nav_product">Produk</a></li>
+        <li><a href="#" data-i18n="nav_contact">Kontak</a></li>
+        <li><a href="#" data-i18n="nav_community">Komunitas</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="login-button"><i data-feather="user"></i> <span data-i18n="btn_login">Masuk</span></button>
+      </div>
+    </nav>
+    
+    
+        <div class="hero-content">
+          <h2 class="Header-text">Cari Resep Nusantara? Ini Dia Kumpulan Terbaik dari Tanah Jawa!</h2>
+          <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Carii ...">
+            <button id="searchBtn" aria-label="search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="filter-button">
+            <button type="button" data-filter="all">All</button>
+            <button type="button" data-filter=".jawa-timur">Jawa Timur</button>
+            <button type="button" data-filter=".jawa-tengah">Jawa Tengah</button>
+            <button type="button" data-filter=".jawa-barat">Jawa Barat</button>
+            <button type="button" data-filter=".yogyakarta">Yogyakarta</button>
+            <button type="button" data-filter=".jakarta">Jakarta</button>
+            <button type="button" data-filter=".banten">Banten</button>
+          </div>
+          <div class="container-resep">
+            <!-- Kartu 1 -->
+            <div class="card mix jawa-tengah">
+              <img class="card-img" src="Assets/Img/Nasi Liwet.png" alt="Nasi Liwet" />
+              <div class="card-content">
+                <div class="location">Jawa Tengah</div>
+                <div class="food-name">Nasi Liwet</div>
+                <p>Nasi gurih khas dari Solo, Jawa Tengah yang kaya rasa dan aroma santan.</p>
+                <div class="details-row">
+                  <span class="detail"><i class="fa-solid fa-clock"></i> 1 hr</span>
+                  <span class="detail"><i class="fa-solid fa-star"></i> 4.4</span>
+                </div>
+                <a href="resep/nasiliwet.html" class="lihat-btn">Lihat</a>
+              </div>
+            </div>
+            <!-- Kartu 2 -->
+            <div class="card mix yogyakarta">
+              <img class="card-img" src="Assets/Img/Gudeg Jogja.png" alt="Gudeg" />
+              <div class="card-content">
+                <div class="location">Yogyakarta</div>
+                <div class="food-name">Gudeg</div>
+                <p>Makanan khas Yogyakarta berbahan nangka muda dimasak dengan santan.</p>
+                <div class="details-row">
+                  <span class="detail"><i class="fa-solid fa-clock"></i> 50 mins</span>
+                  <span class="detail"><i class="fa-solid fa-star"></i> 4.8</span>
+                </div>
+                <a href="resep/gudeg.html" class="lihat-btn">Lihat</a>
+              </div>
+            </div>
+            <!-- Kartu 3 -->
+            <div class="card mix jawa-barat">
+              <img class="card-img" src="Assets/Img/Seblak.png" alt="Seblak" />
+              <div class="card-content">
+                <div class="location">Jawa Barat</div>
+                <div class="food-name">Seblak</div>
+                <p>Masakan khas Bandung dengan rasa pedas gurih berbahan kerupuk basah.</p>
+                <div class="details-row">
+                  <span class="detail"><i class="fa-solid fa-clock"></i> 45 mins</span>
+                  <span class="detail"><i class="fa-solid fa-star"></i> 4.7</span>
+                </div>
+                <a href="resep/seblak.html" class="lihat-btn">Lihat</a>
+              </div>
+            </div>
+            <!-- Kartu 4 -->
+            <div class="card mix jakarta">
+              <img class="card-img" src="Assets/Img/Soto Betawi.png" alt="Soto Betawi" />
+              <div class="card-content">
+                <div class="location">DKI Jakarta</div>
+                <div class="food-name">Soto Betawi</div>
+                <p>Soto khas Betawi dengan kuah santan atau susu yang kaya rasa.</p>
+                <div class="details-row">
+                  <span class="detail"><i class="fa-solid fa-clock"></i> 55 mins</span>
+                  <span class="detail"><i class="fa-solid fa-star"></i> 4.5</span>
+                </div>
+                <a href="resep/sotobetawi.html" class="lihat-btn">Lihat</a>
+              </div>
+            </div>
+            <!-- Kartu 5 -->
+            <div class="card mix jawa-timur">
+              <img class="card-img" src="Assets/Img/Rawon.png" alt="Rawon" />
+              <div class="card-content">
+                <div class="location">Jawa Timur</div>
+                <div class="food-name">Rawon</div>
+                <p>Sup daging sapi khas Jawa Timur dengan kuah hitam dari kluwek.</p>
+                <div class="details-row">
+                  <span class="detail"><i class="fa-solid fa-clock"></i> 1 hr</span>
+                  <span class="detail"><i class="fa-solid fa-star"></i> 4.6</span>
+                </div>
+                <a href="resep/rawon.html" class="lihat-btn">Lihat</a>
+              </div>
+            </div>
+            <!-- Kartu 6 -->
+            <div class="card mix banten">
+              <img class="card-img" src="Assets/Img/Sate Bandeng.png" alt="Lontong Sayur" />
+              <div class="card-content">
+                <div class="location">Banten</div>
+                <div class="food-name">Sate Bandeng</div>
+                <p>Ikan bandeng berbumbu khas Banten yang dibakar hingga matang.</p>
+                <div class="details-row">
+                  <span class="detail"><i class="fa-solid fa-clock"></i> 40 mins</span>
+                  <span class="detail"><i class="fa-solid fa-star"></i> 4.3</span>
+                </div>
+                <a href="resep/satebandeng.html" class="lihat-btn">Lihat</a>
+              </div>
+            </div>
+          <!-- kartu 7 -->
+          <div class="card mix jawa-tengah">
+            <img class="card-img" src="Assets/Img/mendoan.jpeg" alt="Lontong Sayur" />
+            <div class="card-content">
+              <div class="location">Jawa tengah</div>
+              <div class="food-name">Mendoan</div>
+              <p>Tempe dengan baluran tepung yang digoreng.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 1.5 jam</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.5</span>
+              </div>
+              <a href="resep/mendoan.html" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+           <!-- kartu 7 -->
+           <div class="card mix jakarta">
+            <img class="card-img" src="Assets/img/Gado Gado.png" alt="Lontong Sayur" />
+            <div class="card-content">
+              <div class="location">Jakarta</div>
+              <div class="food-name">Gado Gado</div>
+              <p>Aneka sayuran rebus disajikan dengan bumbu kacang khas, lengkap dengan telur, lontong, dan kerupuk.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 40 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.3</span>
+              </div>
+              <a href="resep/gadogado.html" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+           <!-- kartu 7 -->
+           <div class="card mix jawa-tengah">
+            <img class="card-img" src="Assets/img/tongseng.jpg" alt="Tongseng" />
+            <div class="card-content">
+              <div class="location">Jawa Tengah</div>
+              <div class="food-name">Tongseng</div>
+              <p>Daging berkuah santan manis pedas, dimasak dengan kol dan bumbu khas.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 40 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.3</span>
+              </div>
+              <a href="resep/tongseng.html" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Our Services</li>
+              <li>Blogs</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>NusaJava Eats Web</h3>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Menu</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>NusaJava Eats@Gmail.Com</li>
+              <li>+085727196825</li>
+              <li>Instagram:@NusaJava.Eats</li>
+            </ul>
+          </div>
+          <div class="footer-col social">
+            <h3>Follow Us</h3>
+            <a href="#" aria-label="LinkedIn" class="social-icon">
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="social-icon">
+              <i data-feather="youtube"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-icon">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="#" aria-label="Github" class="social-icon">
+              <i data-feather="github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2025 NusaJava Eats.</div>
+      </footer>
+    
+    
+
+      <script src="/script.js"></script>
+  <script src="mixitup.min.js"></script>
+  <script src="/script.js"></script>
+<script src="mixitup.min (1).js"></script>
+<script>
+  feather.replace();
+</script>
+
+<script>
+  // Inisialisasi MixItUp
+  var mixer = mixitup('.container-resep');
+
+  // Perbaikan bug klik filter lompat ke atas
+  const filterButtons = document.querySelectorAll('.filter-button button');
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault(); // Cegah tombol bikin halaman loncat
+      document.activeElement.blur(); // Hapus fokus dari tombol biar gak trigger scroll
+    });
+  });
+</script>
+
+<script>
+  const navbar = document.getElementById("mainNavbar");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

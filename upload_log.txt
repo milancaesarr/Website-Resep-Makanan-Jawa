@@ -1,0 +1,663 @@
+[2025-06-09 08:59:48] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => IMG_0846.JPG
+            [full_path] => IMG_0846.JPG
+            [type] => image/jpeg
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php23A4.tmp
+            [error] => 0
+            [size] => 1381670
+        )
+
+)
+
+[2025-06-09 08:59:48] Upload attempt - File: IMG_0846.JPG, Size: 1381670
+[2025-06-09 08:59:48] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php23A4.tmp, Name: IMG_0846.JPG, Ext: jpg
+[2025-06-09 08:59:48] Attempting to move file to: uploads/recipes/recipe_6846a284092fe.jpg
+[2025-06-09 08:59:48] SUCCESS: File uploaded to uploads/recipes/recipe_6846a284092fe.jpg (size: 1381670 bytes)
+[2025-06-09 08:59:48] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846a284092fe.jpg'
+[2025-06-09 13:29:54] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php6CD2.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 13:29:54] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 13:29:54] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php6CD2.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 13:29:54] Attempting to move file to: uploads/recipes/recipe_6846e1d22e8f8.png
+[2025-06-09 13:29:54] SUCCESS: File uploaded to uploads/recipes/recipe_6846e1d22e8f8.png (size: 116069 bytes)
+[2025-06-09 13:29:54] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846e1d22e8f8.png'
+[2025-06-09 13:47:48] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpD321.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 13:47:49] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 13:47:49] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpD321.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 13:47:49] Attempting to move file to: uploads/recipes/recipe_6846e6050081b.png
+[2025-06-09 13:47:49] SUCCESS: File uploaded to uploads/recipes/recipe_6846e6050081b.png (size: 116069 bytes)
+[2025-06-09 13:47:49] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846e6050081b.png'
+[2025-06-09 13:47:49] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpD320.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 13:47:49] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 13:47:49] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpD320.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 13:47:49] Attempting to move file to: uploads/recipes/recipe_6846e60513001.png
+[2025-06-09 13:47:49] SUCCESS: File uploaded to uploads/recipes/recipe_6846e60513001.png (size: 116069 bytes)
+[2025-06-09 13:47:49] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846e60513001.png'
+[2025-06-09 13:48:09] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php251B.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 13:48:09] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 13:48:09] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php251B.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 13:48:09] Attempting to move file to: uploads/recipes/recipe_6846e619ded08.png
+[2025-06-09 13:48:09] SUCCESS: File uploaded to uploads/recipes/recipe_6846e619ded08.png (size: 116069 bytes)
+[2025-06-09 13:48:09] Database SUCCESS: Recipe ID 2 updated, image_url: 'uploads/recipes/recipe_6846e619ded08.png'
+[2025-06-09 13:48:09] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php251C.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 13:48:09] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 13:48:09] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php251C.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 13:48:09] Attempting to move file to: uploads/recipes/recipe_6846e619f04d4.png
+[2025-06-09 13:48:10] SUCCESS: File uploaded to uploads/recipes/recipe_6846e619f04d4.png (size: 116069 bytes)
+[2025-06-09 13:48:10] Database SUCCESS: Recipe ID 2 updated, image_url: 'uploads/recipes/recipe_6846e619f04d4.png'
+[2025-06-09 13:52:15] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpE59F.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 13:52:15] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 13:52:15] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 13:52:15] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpE59F.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 13:52:15] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846e70fc5bfe.png
+[2025-06-09 13:52:15] Will store in DB as: uploads/recipes/recipe_6846e70fc5bfe.png
+[2025-06-09 13:52:15] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846e70fc5bfe.png (size: 116069 bytes)
+[2025-06-09 13:52:15] DB value will be: 'uploads/recipes/recipe_6846e70fc5bfe.png'
+[2025-06-09 13:52:15] File permissions: 0666
+[2025-06-09 13:52:15] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846e70fc5bfe.png'
+[2025-06-09 13:52:26] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php1098.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 13:52:26] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 13:52:26] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 13:52:26] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php1098.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 13:52:26] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846e71ac4ff2.png
+[2025-06-09 13:52:26] Will store in DB as: uploads/recipes/recipe_6846e71ac4ff2.png
+[2025-06-09 13:52:26] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846e71ac4ff2.png (size: 116069 bytes)
+[2025-06-09 13:52:26] DB value will be: 'uploads/recipes/recipe_6846e71ac4ff2.png'
+[2025-06-09 13:52:26] File permissions: 0666
+[2025-06-09 13:52:26] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846e71ac4ff2.png'
+[2025-06-09 14:01:28] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php5397.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 14:01:28] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 14:01:28] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php5397.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 14:01:28] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846e93848965.png'
+[2025-06-09 14:08:59] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php3744.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 14:08:59] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 14:08:59] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:08:59] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php3744.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 14:08:59] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846eafbba968.png
+[2025-06-09 14:08:59] Will store in DB as: uploads/recipes/recipe_6846eafbba968.png
+[2025-06-09 14:08:59] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846eafbba968.png (size: 116069 bytes)
+[2025-06-09 14:08:59] DB value will be: 'uploads/recipes/recipe_6846eafbba968.png'
+[2025-06-09 14:08:59] File permissions: 0666
+[2025-06-09 14:08:59] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846eafbba968.png'
+[2025-06-09 14:17:07] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpA89B.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 14:17:07] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 14:17:07] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:17:07] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpA89B.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 14:17:07] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ece3c6ac4.png
+[2025-06-09 14:17:07] Will store in DB as: uploads/recipes/recipe_6846ece3c6ac4.png
+[2025-06-09 14:17:07] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ece3c6ac4.png (size: 116069 bytes)
+[2025-06-09 14:17:07] DB value will be: 'uploads/recipes/recipe_6846ece3c6ac4.png'
+[2025-06-09 14:17:07] File permissions: 0666
+[2025-06-09 14:17:07] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846ece3c6ac4.png'
+[2025-06-09 14:19:34] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpE59B.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 14:19:34] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 14:19:34] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:19:34] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpE59B.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 14:19:34] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ed762efa0.png
+[2025-06-09 14:19:34] Will store in DB as: uploads/recipes/recipe_6846ed762efa0.png
+[2025-06-09 14:19:34] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ed762efa0.png (size: 116069 bytes)
+[2025-06-09 14:19:34] DB value will be: 'uploads/recipes/recipe_6846ed762efa0.png'
+[2025-06-09 14:19:34] File permissions: 0666
+[2025-06-09 14:19:34] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846ed762efa0.png'
+[2025-06-09 14:27:19] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpFE04.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 14:27:19] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 14:27:19] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:27:19] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpFE04.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 14:27:19] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ef472e54a.png
+[2025-06-09 14:27:19] Will store in DB as: uploads/recipes/recipe_6846ef472e54a.png
+[2025-06-09 14:27:19] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ef472e54a.png (size: 116069 bytes)
+[2025-06-09 14:27:19] DB value will be: 'uploads/recipes/recipe_6846ef472e54a.png'
+[2025-06-09 14:27:19] File permissions: 0666
+[2025-06-09 14:27:19] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846ef472e54a.png'
+[2025-06-09 14:27:19] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpFEFF.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 14:27:19] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 14:27:19] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:27:19] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpFEFF.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 14:27:19] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ef476e716.png
+[2025-06-09 14:27:19] Will store in DB as: uploads/recipes/recipe_6846ef476e716.png
+[2025-06-09 14:27:19] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ef476e716.png (size: 116069 bytes)
+[2025-06-09 14:27:19] DB value will be: 'uploads/recipes/recipe_6846ef476e716.png'
+[2025-06-09 14:27:19] File permissions: 0666
+[2025-06-09 14:27:19] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846ef476e716.png'
+[2025-06-09 14:46:47] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpD08A.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 14:46:47] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 14:46:47] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:46:47] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpD08A.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 14:46:47] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f3d727344.png
+[2025-06-09 14:46:47] Will store in DB as: uploads/recipes/recipe_6846f3d727344.png
+[2025-06-09 14:46:47] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f3d727344.png (size: 116069 bytes)
+[2025-06-09 14:46:47] DB value will be: 'uploads/recipes/recipe_6846f3d727344.png'
+[2025-06-09 14:46:47] File permissions: 0666
+[2025-06-09 14:46:47] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846f3d727344.png'
+[2025-06-09 14:51:00] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => IMG_0846.JPG
+            [full_path] => IMG_0846.JPG
+            [type] => image/jpeg
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpAEE8.tmp
+            [error] => 0
+            [size] => 1381670
+        )
+
+)
+
+[2025-06-09 14:51:00] Upload attempt - File: IMG_0846.JPG, Size: 1381670
+[2025-06-09 14:51:00] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:51:00] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpAEE8.tmp, Name: IMG_0846.JPG, Ext: jpg
+[2025-06-09 14:51:00] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f4d4babf6.jpg
+[2025-06-09 14:51:00] Will store in DB as: uploads/recipes/recipe_6846f4d4babf6.jpg
+[2025-06-09 14:51:00] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f4d4babf6.jpg (size: 1381670 bytes)
+[2025-06-09 14:51:00] DB value will be: 'uploads/recipes/recipe_6846f4d4babf6.jpg'
+[2025-06-09 14:51:00] File permissions: 0666
+[2025-06-09 14:51:00] Database SUCCESS: Recipe ID 2 updated, image_url: 'uploads/recipes/recipe_6846f4d4babf6.jpg'
+[2025-06-09 14:52:20] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Gudeg Jogja.png
+            [full_path] => Gudeg Jogja.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpE6CC.tmp
+            [error] => 0
+            [size] => 110438
+        )
+
+)
+
+[2025-06-09 14:52:20] Upload attempt - File: Gudeg Jogja.png, Size: 110438
+[2025-06-09 14:52:20] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:52:20] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpE6CC.tmp, Name: Gudeg Jogja.png, Ext: png
+[2025-06-09 14:52:20] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f52490b89.png
+[2025-06-09 14:52:20] Will store in DB as: uploads/recipes/recipe_6846f52490b89.png
+[2025-06-09 14:52:20] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f52490b89.png (size: 110438 bytes)
+[2025-06-09 14:52:20] DB value will be: 'uploads/recipes/recipe_6846f52490b89.png'
+[2025-06-09 14:52:20] File permissions: 0666
+[2025-06-09 14:52:20] Database SUCCESS: Recipe ID 2 updated, image_url: 'uploads/recipes/recipe_6846f52490b89.png'
+[2025-06-09 14:53:28] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Gudeg Jogja.png
+            [full_path] => Gudeg Jogja.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpF178.tmp
+            [error] => 0
+            [size] => 110438
+        )
+
+)
+
+[2025-06-09 14:53:28] Upload attempt - File: Gudeg Jogja.png, Size: 110438
+[2025-06-09 14:53:28] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:53:28] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpF178.tmp, Name: Gudeg Jogja.png, Ext: png
+[2025-06-09 14:53:28] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f568cbcac.png
+[2025-06-09 14:53:28] Will store in DB as: uploads/recipes/recipe_6846f568cbcac.png
+[2025-06-09 14:53:28] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f568cbcac.png (size: 110438 bytes)
+[2025-06-09 14:53:28] DB value will be: 'uploads/recipes/recipe_6846f568cbcac.png'
+[2025-06-09 14:53:28] File permissions: 0666
+[2025-06-09 14:53:28] Database SUCCESS: Recipe ID 2 updated, image_url: 'uploads/recipes/recipe_6846f568cbcac.png'
+[2025-06-09 14:53:46] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Sate Bandeng.png
+            [full_path] => Sate Bandeng.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php3847.tmp
+            [error] => 0
+            [size] => 127128
+        )
+
+)
+
+[2025-06-09 14:53:46] Upload attempt - File: Sate Bandeng.png, Size: 127128
+[2025-06-09 14:53:46] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 14:53:46] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php3847.tmp, Name: Sate Bandeng.png, Ext: png
+[2025-06-09 14:53:46] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f57aecd03.png
+[2025-06-09 14:53:46] Will store in DB as: uploads/recipes/recipe_6846f57aecd03.png
+[2025-06-09 14:53:46] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f57aecd03.png (size: 127128 bytes)
+[2025-06-09 14:53:46] DB value will be: 'uploads/recipes/recipe_6846f57aecd03.png'
+[2025-06-09 14:53:46] File permissions: 0666
+[2025-06-09 14:53:46] Database SUCCESS: Recipe ID 2 updated, image_url: 'uploads/recipes/recipe_6846f57aecd03.png'
+[2025-06-09 15:05:23] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpDA83.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 15:05:23] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 15:05:23] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 15:05:23] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpDA83.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 15:05:23] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f833d3824.png
+[2025-06-09 15:05:23] Will store in DB as: uploads/recipes/recipe_6846f833d3824.png
+[2025-06-09 15:05:23] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f833d3824.png (size: 116069 bytes)
+[2025-06-09 15:05:23] DB value will be: 'uploads/recipes/recipe_6846f833d3824.png'
+[2025-06-09 15:05:23] File permissions: 0666
+[2025-06-09 15:05:23] Database SUCCESS: Recipe ID 2 updated, image_url: 'uploads/recipes/recipe_6846f833d3824.png'
+[2025-06-09 15:05:39] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Gudeg Jogja.png
+            [full_path] => Gudeg Jogja.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php1700.tmp
+            [error] => 0
+            [size] => 110438
+        )
+
+)
+
+[2025-06-09 15:05:39] Upload attempt - File: Gudeg Jogja.png, Size: 110438
+[2025-06-09 15:05:39] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 15:05:39] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php1700.tmp, Name: Gudeg Jogja.png, Ext: png
+[2025-06-09 15:05:39] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f84354131.png
+[2025-06-09 15:05:39] Will store in DB as: uploads/recipes/recipe_6846f84354131.png
+[2025-06-09 15:05:39] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f84354131.png (size: 110438 bytes)
+[2025-06-09 15:05:39] DB value will be: 'uploads/recipes/recipe_6846f84354131.png'
+[2025-06-09 15:05:39] File permissions: 0666
+[2025-06-09 15:05:39] Database SUCCESS: Recipe ID 2 updated, image_url: 'uploads/recipes/recipe_6846f84354131.png'
+[2025-06-09 15:05:55] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Rawon.png
+            [full_path] => Rawon.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php54E5.tmp
+            [error] => 0
+            [size] => 121083
+        )
+
+)
+
+[2025-06-09 15:05:55] Upload attempt - File: Rawon.png, Size: 121083
+[2025-06-09 15:05:55] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 15:05:55] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php54E5.tmp, Name: Rawon.png, Ext: png
+[2025-06-09 15:05:55] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f8532956b.png
+[2025-06-09 15:05:55] Will store in DB as: uploads/recipes/recipe_6846f8532956b.png
+[2025-06-09 15:05:55] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f8532956b.png (size: 121083 bytes)
+[2025-06-09 15:05:55] DB value will be: 'uploads/recipes/recipe_6846f8532956b.png'
+[2025-06-09 15:05:55] File permissions: 0666
+[2025-06-09 15:05:55] Database SUCCESS: Recipe ID 2 updated, image_url: 'uploads/recipes/recipe_6846f8532956b.png'
+[2025-06-09 15:06:51] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => 
+            [full_path] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+
+[2025-06-09 15:06:51] No file uploaded (keeping existing image)
+[2025-06-09 15:06:51] Database SUCCESS: Recipe ID 1 updated, image_url: 'Assets/Img/makanan/Nasi Liwet.png'
+[2025-06-09 15:09:24] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php882C.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 15:09:24] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 15:09:24] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 15:09:24] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php882C.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 15:09:24] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f924db94e.png
+[2025-06-09 15:09:24] Will store in DB as: uploads/recipes/recipe_6846f924db94e.png
+[2025-06-09 15:09:24] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846f924db94e.png (size: 116069 bytes)
+[2025-06-09 15:09:24] DB value will be: 'uploads/recipes/recipe_6846f924db94e.png'
+[2025-06-09 15:09:24] File permissions: 0666
+[2025-06-09 15:09:24] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846f924db94e.png'
+[2025-06-09 15:34:42] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpB057.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 15:34:46] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpC094.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 15:35:15] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => Nasi Liwet.png
+            [full_path] => Nasi Liwet.png
+            [type] => image/png
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\php3121.tmp
+            [error] => 0
+            [size] => 116069
+        )
+
+)
+
+[2025-06-09 15:35:15] Upload attempt - File: Nasi Liwet.png, Size: 116069
+[2025-06-09 15:35:15] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 15:35:15] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\php3121.tmp, Name: Nasi Liwet.png, Ext: png
+[2025-06-09 15:35:15] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ff3370919.png
+[2025-06-09 15:35:15] Will store in DB as: uploads/recipes/recipe_6846ff3370919.png
+[2025-06-09 15:35:15] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6846ff3370919.png (size: 116069 bytes)
+[2025-06-09 15:35:15] DB value will be: 'uploads/recipes/recipe_6846ff3370919.png'
+[2025-06-09 15:35:15] File permissions: 0666
+[2025-06-09 15:35:15] Database SUCCESS: Recipe ID 1 updated, image_url: 'uploads/recipes/recipe_6846ff3370919.png'
+[2025-06-09 15:51:56] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => 
+            [full_path] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+
+[2025-06-09 15:51:56] No file uploaded (keeping existing image)
+[2025-06-09 15:51:56] Database SUCCESS: Recipe ID 7 updated, image_url: 'Assets/Img/makanan/mendoan.jpeg'
+[2025-06-09 15:52:26] === AJAX REQUEST RECEIVED ===
+POST action: edit
+FILES array: Array
+(
+    [recipe_image] => Array
+        (
+            [name] => mendoan.jpeg
+            [full_path] => mendoan.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\Users\ASUS\AppData\Local\Temp\phpEC3C.tmp
+            [error] => 0
+            [size] => 95561
+        )
+
+)
+
+[2025-06-09 15:52:26] Upload attempt - File: mendoan.jpeg, Size: 95561
+[2025-06-09 15:52:26] Paths - Upload dir: uploads/recipes/, Absolute: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/, __DIR__: D:\laragon\www\nusa-java-eats-milan
+[2025-06-09 15:52:26] File details - Temp: C:\Users\ASUS\AppData\Local\Temp\phpEC3C.tmp, Name: mendoan.jpeg, Ext: jpeg
+[2025-06-09 15:52:26] Attempting to move file to: D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6847033a6a115.jpeg
+[2025-06-09 15:52:26] Will store in DB as: uploads/recipes/recipe_6847033a6a115.jpeg
+[2025-06-09 15:52:26] SUCCESS: File uploaded to D:\laragon\www\nusa-java-eats-milan/uploads/recipes/recipe_6847033a6a115.jpeg (size: 95561 bytes)
+[2025-06-09 15:52:26] DB value will be: 'uploads/recipes/recipe_6847033a6a115.jpeg'
+[2025-06-09 15:52:26] File permissions: 0666
+[2025-06-09 15:52:26] Database SUCCESS: Recipe ID 7 updated, image_url: 'uploads/recipes/recipe_6847033a6a115.jpeg'

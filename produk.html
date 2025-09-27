@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NusaJava Eats - Produk</title>
+  <link rel="stylesheet" href="produk.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <nav class="navbar" id="mainNavbar">
+    <div class="logo">
+      <img src="Assets/Img/NusaJava Eats.png" alt="Logo" />
+      <span class="logo-text">NusaJava Eats</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">Beranda</a></li>
+      <li><a href="#">Tentang Kami</a></li>
+      <li><a href="#">Resep</a></li>
+      <li><a href="#">Produk</a></li>
+      <li><a href="#">Kontak</a></li>
+      <li><a href="#">Komunitas</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="cart-navbar-wrapper">
+        <button class="cart-navbar-btn" id="cartNavbarBtn" aria-label="Cart">
+          <i data-feather="shopping-cart"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <div class="cart-dropdown" id="cartDropdown">
+          <!-- Cart content render by JS -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main style="margin-top:90px;">
+    <section class="produk" id="produk">
+      <div class="container-produk">
+        <h1 data-i18n="produk_title">Bumbu Instant Nusantara: Kepraktisan Rasa Khas Tanah Jawa</h1>
+        <p class="desc" data-i18n="produk_desc">
+          Dengan beragam rempah yang ada, setiap hidangan menjadi lebih istimewa,
+          memancarkan kelezatan yang tidak terlupakan. Mari jelajahi kekayaan cita rasa dari Tanah Jawa,
+          yang menyatukan tradisi dan kelezatan dalam setiap hidangan.
+        </p>
+  
+        <div class="filter-button">
+          <button type="button" data-filter="all">All</button>
+          <button type="button" data-filter=".royco">Royco</button>
+          <button type="button" data-filter=".bamboe">Bamboe</button>
+          <button type="button" data-filter=".indofood">Indofood</button>
+          <button type="button" data-filter=".bango">Bango</button>
+          <button type="button" data-filter=".saori">Saori</button>
+          <button type="button" data-filter=".sasa">Sasa</button>
+        </div>
+      <div class="container-produk">
+        <div class="produk-grid" id="produkGrid">
+          <!-- Kartu produk akan di-render JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 data-i18n="footer_useful">Useful Links</h3>
+        <ul>
+          <li data-i18n="footer_about">About Us</li>
+          <li data-i18n="footer_services">Our Services</li>
+          <li data-i18n="footer_blogs">Blogs</li>
+          <li data-i18n="footer_faq">FAQ</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_web">NusaJava Eats Web</h3>
+        <ul>
+          <li data-i18n="footer_home">Home</li>
+          <li data-i18n="footer_about_us">About Us</li>
+          <li data-i18n="footer_menu">Menu</li>
+          <li data-i18n="footer_contact">Contact</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_contact_us">Contact Us</h3>
+        <ul>
+          <li>NusaJava <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+              data-cfemail="0c496d787f4c4b616d6560224f6361"></a></li>
+          <li>+085727196825</li>
+          <li>Instagram:@NusaJava.Eats</li>
+        </ul>
+      </div>
+      <div class="footer-col social">
+        <h3 data-i18n="footer_follow">Follow Us</h3>
+        <a href="#" aria-label="LinkedIn" class="social-icon">
+          <i data-feather="linkedin"></i>
+        </a>
+        <a href="#" aria-label="YouTube" class="social-icon">
+          <i data-feather="youtube"></i>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-icon">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="#" aria-label="Github" class="social-icon">
+          <i data-feather="github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 NusaJava Eats.</div>
+  </footer>
+  <script src="produk2.js"></script>
+  <script>feather.replace();</script>
+</body>
+
+</html>

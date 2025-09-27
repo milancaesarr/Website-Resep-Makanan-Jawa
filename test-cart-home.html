@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Cart Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        .test-cart-btn {
+            background: #feba71;
+            color: #5b2620;
+            border: none;
+            padding: 12px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            position: relative;
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .test-cart-btn:hover {
+            background: #fff;
+            transform: scale(1.1);
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #af2d2d;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .cart-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            width: 380px;
+            padding: 20px;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .cart-dropdown.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .test-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Cart Button</h1>
+
+    <div class="test-wrapper">
+        <button class="test-cart-btn" id="testCartBtn">
+            <i data-feather="shopping-cart"></i>
+            <span class="cart-badge">3</span>
+        </button>
+
+        <div class="cart-dropdown" id="testDropdown">
+            <h3>Test Cart Dropdown</h3>
+            <p>Ini adalah test dropdown untuk memastikan cart button berfungsi.</p>
+            <button onclick="alert('Test button works!')">Test Button</button>
+        </div>
+    </div>
+
+    <br><br>
+
+    <button onclick="testManualClick()">Manual Test Click</button>
+    <button onclick="checkElements()">Check Elements</button>
+
+    <div id="log" style="margin-top: 20px; padding: 10px; background: #f0f0f0; white-space: pre-wrap;"></div>
+
+    <script>
+        function log(message) {
+            const logDiv = document.getElementById('log');
+            logDiv.textContent += new Date().toLocaleTimeString() + ': ' + message + '\n';
+        }
+
+        function testManualClick() {
+            log('Manual click test triggered');
+            toggleTestDropdown();
+        }
+
+        function checkElements() {
+            const btn = document.getElementById('testCartBtn');
+            const dropdown = document.getElementById('testDropdown');
+            log('Button exists: ' + !!btn);
+            log('Dropdown exists: ' + !!dropdown);
+            log('Button computed style: ' + window.getComputedStyle(btn).pointerEvents);
+        }
+
+        function toggleTestDropdown() {
+            log('Toggle dropdown called');
+            const dropdown = document.getElementById('testDropdown');
+            if (dropdown) {
+                dropdown.classList.toggle('open');
+                log('Dropdown toggled, classes: ' + dropdown.className);
+            } else {
+                log('Dropdown not found!');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            log('DOM loaded');
+
+            // Replace feather icons
+            feather.replace();
+
+            setTimeout(function() {
+                const btn = document.getElementById('testCartBtn');
+
+                if (btn) {
+                    log('Setting up button event listener');
+
+                    btn.addEventListener('click', function(e) {
+                        log('Button clicked via addEventListener');
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggleTestDropdown();
+                    });
+
+                    btn.onclick = function(e) {
+                        log('Button clicked via onclick');
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggleTestDropdown();
+                    };
+
+                } else {
+                    log('Button not found!');
+                }
+            }, 100);
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdown = document.getElementById('testDropdown');
+            const btn = document.getElementById('testCartBtn');
+
+            if (dropdown && btn && !dropdown.contains(e.target) && !btn.contains(e.target)) {
+                dropdown.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+</html>

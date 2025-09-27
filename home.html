@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">NusaJava Eats</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" id="mainNavbar">
+    <div class="logo">
+      <img src="Assets/Img/NusaJava Eats.png" alt="Logo">
+      <span class="logo-text" data-i18n="header_brand">NusaJava Eats</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#" data-i18n="nav_home" class="active">Beranda</a></li>
+      <li><a href="about" data-i18n="nav_about">Tentang Kami</a></li>
+      <li><a href="#" data-i18n="nav_recipe">Resep</a></li>
+      <li><a href="#" data-i18n="nav_product">Produk</a></li>
+      <li><a href="#" data-i18n="nav_contact">Kontak</a></li>
+      <li><a href="#" data-i18n="nav_community">Komunitas</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Sebagian navbar: -->
+      <span id="userArea" style="display:none"></span>
+
+      <div class="cart-navbar-wrapper">
+        <button class="cart-navbar-btn" id="cartNavbarBtn" aria-label="Cart">
+          <i data-feather="shopping-cart"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <div class="cart-dropdown" id="cartDropdown">
+          <!-- Cart content render by JS -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="searchResult"></div>
+
+  <section class="slider-1">
+    <div class="slides">
+      <div class="slide">
+        <img src="Assets/Img/banner/Banner 1.png" alt="Banner 1">
+        <div class="content">
+          <h1 data-i18n="brand_title">NusaJava Eats</h1>
+          <p data-i18n="brand_subtitle_1">Dari Dapur Jawa, Untuk Dunia...</p>
+          <button class="banner" data-i18n="btn_visit">Lihat</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="Assets/Img/banner/Banner 2.png" alt="Banner 2">
+        <div class="content">
+          <h1 data-i18n="brand_title">NusaJava Eats</h1>
+          <p data-i18n="brand_subtitle_2">Rasa Tradisi, Sentuhan Modern...</p>
+          <button class="banner" data-i18n="btn_visit">Lihat</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="Assets/Img/banner/Banner 3.png" alt="Banner 3">
+        <div class="content">
+          <h1 data-i18n="brand_title">NusaJava Eats</h1>
+          <p data-i18n="brand_subtitle_3">Lebih dari Sekadar Makan...</p>
+          <button class="banner" data-i18n="btn_visit">Lihat</button>
+        </div>
+      </div>
+    </div>
+    <div class="navigation">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="about-left">
+        <h1 class="about-title" data-i18n="about_title">About Us</h1>
+        <div class="about-img">
+          <img src="Assets/Img/Gudeg.png" alt="Makanan Jawa">
+        </div>
+        <div class="about-text">
+          <h4 class="about-2" data-i18n="about_variety_title">Keanekaragaman Makanan</h4>
+          <p class="deskripsi" data-i18n="about_variety_desc">Makanan khas Jawa memiliki cita rasa yang beragam, mulai
+            dari manis, gurih, hingga pedas. Contohnya, Gudeg yang manis khas Yogyakarta, Rawon dengan kuah hitam khas
+            Jawa Timur, dan Soto Betawi yang gurih dan kaya rempah.</p>
+          <center><button data-i18n="btn_learn">Ayo Lihat</button></center>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-text-3">
+          <p class="about-1" data-i18n="about_intro">Kenapa Sih Kita Mau Memperkenalkan Makanan Tradisional Jawa ke
+            Dunia?</p>
+          <h2 data-i18n="about_subtitle">Jelajahi Kekayaan Rasa Dari Jawa</h2>
+          <div class="about-img">
+            <img src="Assets/Img/Soto Betawi Jakarta.png" alt="Makanan Jawa">
+          </div>
+        </div>
+        <div class="about-text-2">
+          <h4 class="about-2" data-i18n="about_flavor_title">Keanekaragaman Rasa</h4>
+          <p class="deskripsi" data-i18n="about_flavor_desc">Pulau Jawa menyimpan kekayaan kuliner yang tak ternilai.
+            Dari hidangan manis, gurih, hingga pedas, semua kami hadirkan dengan rasa yang otentik. Di balik setiap
+            menu, ada cerita tentang tanah, petani, dan resep yang diwariskan dari generasi ke generasi.</p>
+          <center><button data-i18n="btn_learn">Ayo Lihat</button></center>
+        </div>
+      </div>
+  </section>
+
+  <section class="resep">
+    <h1 data-i18n="resep_title">Menyusuri Rasa di Tanah Jawa<br>Ayo Lihat!!</h1>
+    <p data-i18n="resep_desc">Jelajahi kelezatan khas pulau Jawa lewat ragam kuliner autentik yang menggugah selera.
+      Dari manisnya Gudeg Yogyakarta, pedas gurihnya Seblak Jawa Barat, hingga segarnya Soto Betawi dari Jakarta—setiap
+      sajian menyimpan cerita dan budaya yang kaya. <br class="br"> Ayo lihat dan rasakan sendiri cita rasa Nusantara
+      yang tak terlupakan!</p>
+    <div class="slider-container">
+      <div class="slider-nav">
+        <button class="slider-btn" id="btn-prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="slider-btn" id="btn-next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="slider" id="slider">
+        <!-- Kartu akan dimasukkan oleh JS -->
+      </div>
+    </div>
+  </section>
+
+  <center>
+    <section class="hero">
+      <h1 data-i18n="hero_title">Warisan Rasa Nusantara: Resep Kuliner Terbaik dari Tanah Jawa</h1>
+      <p data-i18n="hero_desc">Website ini menghadirkan berbagai resep autentik dari Jawa Timur, Jawa Tengah, Jawa
+        Barat, Yogyakarta, Jakarta, dan Banten. Disusun dengan menjaga cita rasa tradisional, setiap resep siap membawa
+        kehangatan budaya Nusantara ke meja makan Anda. Temukan inspirasi, jelajahi rasa, dan nikmati warisan kuliner
+        terbaik Indonesia di sini. Temukan inspirasi memasak, rasakan nostalgia, dan hadirkan kelezatan warisan
+        Nusantara di meja makan Anda — hanya di sini.</p>
+      <div class="hero-content">
+        <h4 data-i18n="hero_slogan">Cari Resep Nusantara? Ini Dia Kumpulan Terbaik dari Tanah Jawa!</h4>
+        <div class="search-bar">
+          <input type="text" id="searchInput2" placeholder="Carii ..." data-i18n-placeholder="search_placeholder">
+          <button id="searchBtn" aria-label="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="filter-button">
+          <button type="button" data-filter="all" data-i18n="filter_all">All</button>
+          <button type="button" data-filter=".jawa-timur" data-i18n="filter_jatim">Jawa Timur</button>
+          <button type="button" data-filter=".jawa-tengah" data-i18n="filter_jateng">Jawa Tengah</button>
+          <button type="button" data-filter=".jawa-barat" data-i18n="filter_jabar">Jawa Barat</button>
+          <button type="button" data-filter=".yogyakarta" data-i18n="filter_jogja">Yogyakarta</button>
+          <button type="button" data-filter=".jakarta" data-i18n="filter_jkt">Jakarta</button>
+          <button type="button" data-filter=".banten" data-i18n="filter_btn">Banten</button>
+        </div>
+        <div class="container-resep">
+          <!-- Kartu 1 -->
+          <div class="card mix jawa-tengah">
+            <img class="card-img" src="Assets/Img/makanan/Nasi Liwet.png" alt="Nasi Liwet">
+            <div class="card-content">
+              <div class="location">Jawa Tengah</div>
+              <div class="food-name">Nasi Liwet</div>
+              <p>Nasi gurih khas dari Solo, Jawa Tengah yang kaya rasa dan aroma santan.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 1 hr</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.4</span>
+              </div>
+              <a href="resep.html" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+          <!-- Kartu 2 -->
+          <div class="card mix yogyakarta">
+            <img class="card-img" src="Assets/Img/makanan/Gudeg Jogja.png" alt="Gudeg" />
+            <div class="card-content">
+              <div class="location">Yogyakarta</div>
+              <div class="food-name">Gudeg</div>
+              <p>Makanan khas Yogyakarta berbahan nangka muda dimasak dengan santan.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 50 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+          <!-- Kartu 3 -->
+          <div class="card mix jawa-barat">
+            <img class="card-img" src="Assets/Img/makanan/Seblak.png" alt="Seblak" />
+            <div class="card-content">
+              <div class="location">Jawa Barat</div>
+              <div class="food-name">Seblak</div>
+              <p>Masakan khas Bandung dengan rasa pedas gurih berbahan kerupuk basah.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 45 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.7</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+          <!-- Kartu 4 -->
+          <div class="card mix jakarta">
+            <img class="card-img" src="Assets/Img/makanan/Soto Betawi.png" alt="Soto Betawi" />
+            <div class="card-content">
+              <div class="location">DKI Jakarta</div>
+              <div class="food-name">Soto Betawi</div>
+              <p>Soto khas Betawi dengan kuah santan atau susu yang kaya rasa.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 55 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.5</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+          <!-- Kartu 5 -->
+          <div class="card mix jawa-timur">
+            <img class="card-img" src="Assets/Img/makanan/Rawon.png" alt="Rawon" />
+            <div class="card-content">
+              <div class="location">Jawa Timur</div>
+              <div class="food-name">Rawon</div>
+              <p>Sup daging sapi khas Jawa Timur dengan kuah hitam dari kluwek.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 1 hr</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.6</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+          <!-- Kartu 6 -->
+          <div class="card mix banten">
+            <img class="card-img" src="Assets/Img/makanan/Sate Bandeng.png" alt="Sate Bandeng" />
+            <div class="card-content">
+              <div class="location">Banten</div>
+              <div class="food-name">Sate Bandeng</div>
+              <p>Ikan bandeng berbumbu khas Banten yang dibakar hingga matang.</p>
+              <div class="details-row">
+                <span class="detail"><i class="fa-solid fa-clock"></i> 40 mins</span>
+                <span class="detail"><i class="fa-solid fa-star"></i> 4.3</span>
+              </div>
+              <a href="#" class="lihat-btn">Lihat</a>
+            </div>
+          </div>
+        </div>
+        <div class="lihat-semua-container">
+          <a href="indeks.html" class="lihat-semua-btn" data-i18n="btn_lihat_semua">Lihat Semua <i
+              data-feather="arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </center>
+
+  <section class="produk">
+    <div class="container-produk">
+      <h1 data-i18n="produk_title">Bumbu Instant Nusantara: Kepraktisan Rasa Khas Tanah Jawa</h1>
+      <p class="desc" data-i18n="produk_desc">Dengan beragam rempah yang ada, setiap hidangan menjadi lebih istimewa,
+        memancarkan kelezatan yang tidak terlupakan. Mari jelajahi kekayaan cita rasa dari Tanah Jawa, yang menyatukan
+        tradisi dan kelezatan dalam setiap hidangan.</p>
+      <div class="produk-jalan-wrapper">
+        <h4 data-i18n="produk_slogan">Cari Bumbu khas Nusantara selalu berhasil memberikan sentuhan rasa yang kaya dan
+          menggugah selera!</h4>
+        <button class="produk-btn btn-kiri"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="produk-jalan-track">
+          <!-- Produk makanan tetap asli, button bisa diberi data-i18n -->
+          <div class="card-produk">
+            <img src="Assets/Img/produk/Bamboe Soto Betawi.png" alt="Bamboe Soto Betawi" />
+            <div class="product-name">Bamboe Soto Betawi</div>
+            <button data-i18n="btn_lihat_produk">Lihat produk</button>
+          </div>
+          <div class="card-produk">
+            <img src="Assets/Img/produk/Royco Rasa Jamur.png" alt="Royco Rasa Jamur" />
+            <div class="product-name">Royco Kaldu Jamur</div>
+            <button data-i18n="btn_lihat_produk">Lihat produk</button>
+          </div>
+          <div class="card-produk">
+            <img src="Assets/Img/produk/Saori Lada Hitam.png" alt="Saori Saus Tiram lada Hitam" />
+            <div class="product-name">Saori Lada Hitam</div>
+            <button data-i18n="btn_lihat_produk">Lihat produk</button>
+          </div>
+          <div class="card-produk">
+            <img src="Assets/Img/produk/Kecap Bango.png" alt="Bango Kecap Manis" />
+            <div class="product-name">Bango Kecap Manis</div>
+            <button data-i18n="btn_lihat_produk">Lihat produk</button>
+          </div>
+          <div class="card-produk">
+            <img src="Assets/Img/produk/Royco Rasa Ayam.png" alt="Royco Kaldu Ayam" />
+            <div class="product-name">Royco Kaldu Ayam</div>
+            <button data-i18n="btn_lihat_produk">Lihat produk</button>
+          </div>
+          <div class="card-produk">
+            <img src="Assets/Img/produk/Sasa Ayam Spesial.png" alt="Sasa Ayam Spesial" />
+            <div class="product-name">Sasa Ayam Spesial</div>
+            <button data-i18n="btn_lihat_produk">Lihat produk</button>
+          </div>
+          <div class="card-produk">
+            <img src="Assets/Img/produk/Indofood Sambel Balado.png" alt="Indofood Sambal Balado" />
+            <div class="product-name">Indofood Sambal Balado</div>
+            <button data-i18n="btn_lihat_produk">Lihat produk</button>
+          </div>
+          <div class="card-produk">
+            <img src="Assets/Img/produk/Saori Saus Tiram.png" alt="Saori Saus Tiram" />
+            <div class="product-name">Saori Saus Tiram</div>
+            <button data-i18n="btn_lihat_produk">Lihat produk</button>
+          </div>
+        </div>
+        <button class="produk-btn btn-kanan"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="produk-jalan-indikator"></div>
+    </div>
+    <div class="lihat-semua-container">
+      <a href="produk.html" class="lihat-semua-btn" data-i18n="btn_lihat_semua">Lihat Semua <i
+          data-feather="arrow-right"></i></a>
+    </div>
+  </section>
+
+  <section class="pertanyaan">
+    <h1 class="faq-title" data-i18n="faq_title">Temukan Jawaban Seputar NusaJavaEats di Sini!</h1>
+    <div class="faq-subtitle" data-i18n="faq_subtitle">Punya pertanyaan tentang NusaJavaEats? Simak FAQ berikut ini.
+      Jika pertanyaan Anda belum terjawab, silakan hubungi tim kami!</div>
+    <div class="faq-grid">
+      <div class="faq-column">
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq_q1">Apa itu NusaJavaEats?</button>
+          <div class="faq-answer" data-i18n="faq_a1">NusaJavaEats adalah website yang menyajikan resep-resep masakan
+            tradisional dari berbagai daerah di Pulau Jawa, seperti Jawa Timur, Jawa Tengah, Jawa Barat, Yogyakarta,
+            Jakarta, dan Banten. Kami juga menyediakan produk bumbu instan asli Nusantara untuk memudahkan Anda memasak
+            di rumah.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq_q2">Resep apa saja yang tersedia di NusaJavaEats?</button>
+          <div class="faq-answer" data-i18n="faq_a2">Kami menyediakan berbagai resep khas Jawa, mulai dari Rawon, Gudeg,
+            Soto Betawi, hingga Sate Bandeng Banten, dan masih banyak lagi.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq_q3">Apakah semua resep di NusaJavaEats autentik?</button>
+          <div class="faq-answer" data-i18n="faq_a3">Ya, semua resep kami dikurasi dengan teliti untuk menjaga keaslian
+            rasa dan tradisi masakan dari setiap daerah di Pulau Jawa.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq_q4">Apakah NusaJavaEats menjual produk bumbu instan?</button>
+          <div class="faq-answer" data-i18n="faq_a4">Betul! Kami menawarkan berbagai pilihan bumbu instan berkualitas
+            yang memudahkan Anda memasak makanan khas Jawa di rumah dengan cita rasa otentik.</div>
+        </div>
+      </div>
+      <div class="faq-column">
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq_q5">Bagaimana cara membeli bumbu instan dari
+            NusaJavaEats?</button>
+          <div class="faq-answer" data-i18n="faq_a5">Anda bisa langsung membeli melalui website kami di halaman produk,
+            pilih bumbu yang Anda inginkan, dan selesaikan transaksi dengan metode pembayaran yang tersedia.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq_q6">Apakah pengiriman produk tersedia ke seluruh
+            Indonesia?</button>
+          <div class="faq-answer" data-i18n="faq_a6">Ya, kami melayani pengiriman bumbu instan ke seluruh wilayah
+            Indonesia.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq_q7">Apakah ada tips memasak menggunakan bumbu instan dari
+            NusaJavaEats?</button>
+          <div class="faq-answer" data-i18n="faq_a7">Tentu! Setiap produk bumbu instan kami dilengkapi dengan panduan
+            memasak praktis agar Anda dapat menghasilkan masakan lezat dengan mudah.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-i18n="faq_q8">Apakah saya bisa meminta resep baru di NusaJavaEats?</button>
+          <div class="faq-answer" data-i18n="faq_a8">Kami sangat terbuka terhadap permintaan resep. Anda dapat
+            mengajukan permintaan melalui formulir kontak di website kami.</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 data-i18n="footer_useful">Useful Links</h3>
+        <ul>
+          <li data-i18n="footer_about">About Us</li>
+          <li data-i18n="footer_services">Our Services</li>
+          <li data-i18n="footer_blogs">Blogs</li>
+          <li data-i18n="footer_faq">FAQ</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_web">NusaJava Eats Web</h3>
+        <ul>
+          <li data-i18n="footer_home">Home</li>
+          <li data-i18n="footer_about_us">About Us</li>
+          <li data-i18n="footer_menu">Menu</li>
+          <li data-i18n="footer_contact">Contact</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_contact_us">Contact Us</h3>
+        <ul>
+          <li>NusaJava <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+              data-cfemail="0c496d787f4c4b616d6560224f6361">[email&#160;protected]</a></li>
+          <li>+085727196825</li>
+          <li>Instagram:@NusaJava.Eats</li>
+        </ul>
+      </div>
+      <div class="footer-col social">
+        <h3 data-i18n="footer_follow">Follow Us</h3>
+        <a href="#" aria-label="LinkedIn" class="social-icon">
+          <i data-feather="linkedin"></i>
+        </a>
+        <a href="#" aria-label="YouTube" class="social-icon">
+          <i data-feather="youtube"></i>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-icon">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="#" aria-label="Github" class="social-icon">
+          <i data-feather="github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 NusaJava Eats.</div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="home.js"></script>
+  <Script src="home2.js"></Script>
+  <script src="produk2.js"></script>
+  <script src="slider.js"></script>
+  <script src="mixitup.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
+  <script>
+    var mixer = mixitup('.container-resep');
+  </script>
+  <script>
+    const navbar = document.getElementById("mainNavbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+  <script>
+    feather.replace(); // untuk ikon feather
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Pastikan tombol login ada (supaya tidak error jika belum load)
+      var btnLogin = document.getElementById('btnLogin');
+      if (btnLogin) {
+        btnLogin.onclick = function () {
+          // Redirect ke halaman login (pastikan file login.html ada di folder yang sama!)
+          window.location.href = 'login/index.html';
+        }
+      }
+    });
+  </script>
+  <script>
+    // Jalankan saat Home.html dibuka
+    window.onload = function () {
+      const user = JSON.parse(localStorage.getItem('nusajava_user') || 'null');
+      if (user && user.name) {
+        document.getElementById('btnLogin').style.display = 'none';
+        document.getElementById('userArea').style.display = 'inline';
+        document.getElementById('userArea').innerHTML = `
+      Hi, <b>${user.name.split(' ')[0]}</b>
+      <button onclick="logoutUser()" style="margin-left:10px;">Keluar</button>
+    `;
+      } else {
+        document.getElementById('btnLogin').style.display = 'inline';
+        document.getElementById('userArea').style.display = 'none';
+      }
+    }
+
+    function logoutUser() {
+      localStorage.removeItem('nusajava_user');
+      location.reload();
+    }
+  </script>
+</body>
+
+</html>

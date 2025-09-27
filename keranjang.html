@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keranjang | NusaJava Eats</title>
+  <link rel="stylesheet" href="src/keranjang.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <nav class="navbar" id="mainNavbar">
+    <div class="logo">
+      <img src="Assets/Img/NusaJava Eats.png" alt="Logo">
+      <span class="logo-text" data-i18n="header_brand">NusaJava Eats</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#" data-i18n="nav_home">Beranda</a></li>
+      <li><a href="#" data-i18n="nav_about">Tentang Kami</a></li>
+      <li><a href="#" data-i18n="nav_recipe">Resep</a></li>
+      <li><a href="#" data-i18n="nav_product">Produk</a></li>
+      <li><a href="#" data-i18n="nav_contact">Kontak</a></li>
+      <li><a href="#" data-i18n="nav_community">Komunitas</a></li>
+    </ul>
+
+    <div class="nav-actions">
+
+    </div>
+  </nav>
+  <main class="cart-main">
+    <div class="cart-container" id="cartContainer">
+      <!-- Cart content render by keranjang.js -->
+    </div>
+  </main>
+  <script src="src/keranjang.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>
